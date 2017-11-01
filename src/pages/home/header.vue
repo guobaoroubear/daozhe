@@ -4,7 +4,7 @@
     <div>
     	<input/>
     </div>
-    <span>北京</span>
+    <span>上海</span>
   </div>
 </template>
 
