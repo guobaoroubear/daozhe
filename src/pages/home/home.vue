@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="home">
    		<Home-swipper></Home-swipper>
    		<Home-suggest></Home-suggest>
    		<Home-week></Home-week>
@@ -12,8 +12,6 @@ import HomeSuggest from './homeSuggest.vue';
 import HomeWeek from './homeWeek.vue';
 export default {
   name: 'home',
-  data () {  
-  },
   components: {
   	'Home-swipper': HomeSwipper,
   	'Home-suggest': HomeSuggest,
@@ -23,5 +21,7 @@ export default {
 </script>
 
 <style scoped>
-
+  .home{
+    background-color: #f5f5f5
+  }
 </style>
