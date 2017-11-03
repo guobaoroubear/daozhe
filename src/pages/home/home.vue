@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="home">
    		<Home-swipper></Home-swipper>
    		<Home-suggest></Home-suggest>
    		<Home-week></Home-week>
@@ -21,5 +21,7 @@ export default {
 </script>
 
 <style scoped>
-
+  .home{
+    background-color: #f5f5f5
+  }
 </style>
