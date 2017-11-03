@@ -12,8 +12,6 @@ import HomeSuggest from './homeSuggest.vue';
 import HomeWeek from './homeWeek.vue';
 export default {
   name: 'home',
-  data () {  
-  },
   components: {
   	'Home-swipper': HomeSwipper,
   	'Home-suggest': HomeSuggest,
