@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import HomeSwipper from './homeSwipper.vue';
-import HomeSuggest from './homeSuggest.vue';
-import HomeWeek from './homeWeek.vue';
+import HomeSwipper from './components/homeSwipper'
+import HomeSuggest from './components/homeSuggest'
+import HomeWeek from './components/homeWeek'
 import axios from 'axios';
 export default {
   name: 'home',
