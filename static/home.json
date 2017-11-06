@@ -1,0 +1,115 @@
+{
+	"ret" : true,
+	"data" : {
+	 	"bannerSwiperInfo" : [{
+		 		"id" : 1 ,
+		 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1710/f5/57137c621d75ba02.jpg_640x200_b984ddf7.jpg",
+		 		"link" : "/list"
+	 		},{
+		 		"id" : 2 ,
+		 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1609/15/630b82d932a3c402.jpg_640x200_862e836b.jpg",
+		 		"link" : "/list"
+	 		},{
+		 		"id" : 3 ,
+		 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1711/b3/66f7230d9ad6e002.jpg_640x200_077e61ee.jpg",
+		 		"link" : "/list"
+	 		},{
+		 		"id" : 4 ,
+		 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1710/16/1d7693c6bd8abd02.png_640x200_43c308dd.png",
+		 		"link" : "/list"
+	 		},{
+		 		"id" : 5 ,
+		 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1609/c9/cacbf705c5417e02.jpg_640x200_99b2676a.jpg",
+		 		"link" : "/list"
+	 		},{
+		 		"id" : 6 ,
+		 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1609/15/630b82d932a3c402.jpg_640x200_862e836b.jpg",
+		 		"link" : "/list"
+	 		},{
+		 		"id" : 7 ,
+		 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1711/c5/2b4166f592b33202.jpg_640x200_27b41388.jpg",
+		 		"link" : "/list"
+	 		},{
+		 		"id" : 8 ,
+		 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1710/16/249e5d9c533f6e02.jpg_640x200_9d63493e.jpg",
+		 		"link" : "/list"
+	 		}
+	 		],
+	 	"iconSwiperInfo" : [{
+	 		"pageNum" : 1 ,
+	 		"pageContent" : {
+	 			"iconSwiperitem1" : {
+						 			"id" : 1 ,
+							 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png",
+							 		"link" : "/detail",
+							 		"title" : "景点门票"
+						 		},
+				"iconSwiperitem2" : {
+									"id" : 2 ,
+							 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1611/35/2640cab202c41b02.png",
+							 		"link" : "/detail",
+							 		"title" : "动植物园"
+				},
+				"iconSwiperitem3" : {
+									"id" : 3 ,
+							 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1611/45/676b67d7078abc02.png",
+							 		"link" : "/detail",
+							 		"title" : "故宫"
+				},
+				"iconSwiperitem4" : {
+									"id" : 4 ,
+							 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png",
+							 		"link" : "/detail",
+							 		"title" : "一日游"
+				},
+				"iconSwiperitem5" : {
+									"id" : 5 ,
+							 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1611/59/569d3c096e542502.png",
+							 		"link" : "/detail",
+							 		"title" : "必游榜单"
+				},
+				"iconSwiperitem6" : {
+									"id" : 6 ,
+							 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1611/6d/ee9eb965690ce402.png",
+							 		"link" : "/detail",
+							 		"title" : "秋色美"
+				},
+				"iconSwiperitem7" : {
+									"id" : 7 ,
+							 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1611/d0/e09575e66f4aa402.png",
+							 		"link" : "/detail",
+							 		"title" : "游乐场"
+				},
+				"iconSwiperitem8" : {
+									"id" : 8 ,
+							 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1710/a6/83f636bd75ae6302.png",
+							 		"link" : "/detail",
+							 		"title" : "泡温泉"
+				}		 				 				 				 				 				 				 		
+	 		}
+	 	},{
+ 			"pageNum" : 2 ,
+ 			"pageContent" : {
+ 				"iconSwiperitem1" : {
+						 			"id" : 1 ,
+							 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1611/7f/b1ea3c8c7fb6db02.png",
+							 		"link" : "/detail",
+							 		"title" : "城市观光"
+					 		},
+				"iconSwiperitem2" : {
+									"id" : 2 ,
+							 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1611/29/c16cd064d85d8502.png",
+							 		"link" : "/detail",
+							 		"title" : "玻璃栈道"
+				},
+				"iconSwiperitem3" : {
+									"id" : 3 ,
+							 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1611/1c/a8a8d9023a814c02.png",
+							 		"link" : "/detail",
+							 		"title" : "名胜古迹"
+				}
+ 			}
+ 		}]
+
+	 }
+}
