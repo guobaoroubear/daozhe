@@ -307,9 +307,6 @@ export default {
 	padding-top:0.1rem;
 	background:#fff;
 }
-.mp-icon-page{
-	
-}
 .mp-icon-con{
 	float:left;
 	width:25%;
