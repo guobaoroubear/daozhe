@@ -315,8 +315,6 @@ export default {
 	text-align:center;
 }
 .mp-icon-link{
-}
-mp-icon-img-con{
 	width:0.66rem;
 	height:0.66rem;
 	background:#f0f5f8;
