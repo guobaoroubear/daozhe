@@ -29,10 +29,6 @@
 		    	<div class="swiper-pagination"  slot="pagination"></div>
 		  </swiper>
 	  	</div>
-
-
-
-
 	 	<div class="mp-icon-swiper">
 	  		<swiper :options="swiperOption" ref="mySwiper" class="mp-icon-swiper-container">
 	  			<swiper-slide class="mp-icon-page" v-for="item in iconSwiperInfo" :key="item.pageNum">		
@@ -156,9 +152,6 @@ export default {
 	height:3.7rem;
 	padding-top:0.1rem;
 	background:#fff;
-}
-.mp-icon-page{
-	
 }
 .mp-icon-con{
 	float:left;
