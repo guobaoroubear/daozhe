@@ -24,7 +24,7 @@
 		</ul>
 		<h2 class="home-modtitle">热销推荐</h2>
 		<ul>
-			<li v-for="item in hotList" class="home-hot-list">
+			<li v-for="item in suggestList" class="home-hot-list">
 				<div class="home-hot-img">
 					<img :src="item.img"/>
 				</div>
@@ -43,36 +43,7 @@
 
 <script>
 export default {
-	data(){
-		return {
-			hotList: [{
-				img: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg',
-				title: '故宫',
-				desc: '东方宫殿建筑代表，世界宫殿建筑典范',
-				price: '20'
-			},{
-				img: 'http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_140x140_97813766.jpg',
-				title: '八达岭长城',
-				desc: '不到长城非好汉',
-				price: '25'
-			},{
-				img: 'http://img1.qunarzz.com/sight/p0/1505/d2/d274c92de14c93da.water.jpg_140x140_e20be8e0.jpg',
-				title: '颐和园',
-				desc: '保存完整的一座皇家行宫御苑',
-				price: '23.2'
-			},{
-				img: 'http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_140x140_b05eb1df.jpg',
-				title: '北京欢乐谷',
-				desc: '七大主题园区带你畅享北京欢乐谷',
-				price: '28'
-			},{
-				img: 'http://img1.qunarzz.com/sight/p0/1708/2b/2b6378fd3b2e1d86a3.img.jpg_140x140_eae81520.jpg',
-				title: '慕田峪长城',
-				desc: '秀美长城，关键是人少',
-				price: '19.1'
-			}]
-		}
-	}
+	props: ['suggestList']
 }
 </script>
 
