@@ -1,8 +1,9 @@
 <template>
 	<div class="home">
-   		<Home-swipper></Home-swipper>
+   		<Home-swipper :bannerSwiperInfo="bannerSwiperInfo" :iconSwiperInfo="iconSwiperInfo"></Home-swipper>
    		<Home-suggest :suggestList = "suggestList"></Home-suggest>
    		<Home-week :weekList = "weekList"></Home-week>
+      <router-view></router-view>
 	</div>
 </template>
 
@@ -10,13 +11,15 @@
 import HomeSwipper from './components/homeSwipper'
 import HomeSuggest from './components/homeSuggest'
 import HomeWeek from './components/homeWeek'
-import axios from 'axios'
+import axios from 'axios';
 export default {
   name: 'home',
   data (){
     return {
       suggestList: [],
-      weekList: []
+      weekList: [],
+      bannerSwiperInfo : [] ,
+      iconSwiperInfo : []
     }
   },
   components: {
@@ -34,13 +37,16 @@ export default {
       .catch(this.handleGetDataErr.bind(this))
     },
     handleGetDataSucc (res){
-      const r = res.data;
-      const data = r.data;
-      this.suggestList = data.suggestList;
-      this.weekList = data.weekList;
-            console.log(this.weekList);
+      const r = res.data
+      const data = r.data
+      this.suggestList = data.suggestList
+      this.weekList = data.weekList
+      this.bannerSwiperInfo = data.bannerSwiperInfo
+      this.iconSwiperInfo = data.iconSwiperInfo
     },
-    handleGetDataErr (err){}
+    handleGetDataErr (){
+      alert("获取路径失败")
+    }
   }
 }
 </script>
