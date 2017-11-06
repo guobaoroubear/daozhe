@@ -115,7 +115,7 @@ export default {
 		padding-right: 5%;
 		border-right: 0.02rem solid #e0e0e0;
 		width:100%;
-		background: #fff url(../../assets/wenquan.png) no-repeat;
+		background: #fff url(../../../assets/wenquan.png) no-repeat;
 		background-size: 1.4rem 1.4rem;
 		background-position: top right;
 		background-origin: content-box
@@ -124,7 +124,7 @@ export default {
 		display: block;
 		padding-right: 5%;
 		width:95%;
-		background: #fff url(../../assets/jinqiu.png) no-repeat;
+		background: #fff url(../../../assets/jinqiu.png) no-repeat;
 		background-size: 1.4rem 1.4rem;
 		background-position: top right;
 		background-origin: content-box
