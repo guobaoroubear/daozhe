@@ -3,7 +3,7 @@
    		<Home-swipper :bannerSwiperInfo="bannerSwiperInfo" :iconSwiperInfo="iconSwiperInfo"></Home-swipper>
    		<Home-suggest :suggestList = "suggestList"></Home-suggest>
    		<Home-week :weekList = "weekList"></Home-week>
-      <router-view></router-view>
+
 	</div>
 </template>
 

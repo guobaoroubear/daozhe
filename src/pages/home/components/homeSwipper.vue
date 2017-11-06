@@ -9,7 +9,7 @@
 		  		</a>
 		  	</div>
 		  	<div class="mp-header-right">
-		  		<router-link class="mp-header-right-link" to="/list">
+		  		<router-link class="mp-header-right-link" to="list">
 		  			<span class="mp-header-right-nav">
 		  				北京
 		  				<i class="header-right-bottom icon iconfont">&#xe630;</i>

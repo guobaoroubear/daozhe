@@ -9,25 +9,22 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
-    {
+      {
       path: '/',
       name: 'home',
       component: Home,
-      children: [
-      	{
-      		path: "list",
-      		name: "list",
-      		components: List
-      	},{
-      		path: "citylist",
-      		name: "citylist",
-      		component: CityList
-      	},{
-      		path: "detail",
-      		name: "detail",
-      		component: Detail
-      	}
-      ]
+    },{
+      path: "/list",
+      name: "list",
+      component: List,
+    },{
+      path: "/citylist",
+      name: "citylist",
+      component: CityList,
+    },{
+      path: "/detail",
+      name: "detail",
+      component: Detail,
     }
   ]
 })
