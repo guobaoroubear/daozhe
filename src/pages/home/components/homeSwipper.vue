@@ -9,202 +9,48 @@
 		  		</a>
 		  	</div>
 		  	<div class="mp-header-right">
-		  		<router-link class="mp-header-right-link" to="list">
+		  		<a class="mp-header-right-link">
 		  			<span class="mp-header-right-nav">
 		  				北京
 		  				<i class="header-right-bottom icon iconfont">&#xe630;</i>
 		  			</span>
-		  		</router-link>
+		  		</a>
 		  	</div>
 	  	</div>
 	  	<div class="mp-banner-swipper">
-	  		<swiper :options="swiperOptionAutoplay" ref="mySwiper" >	    
-			    <swiper-slide>
-			    	<div class="mp-banner-con">
-			    		<img class="mp-banner" src="http://img1.qunarzz.com/piao/fusion/1710/f5/57137c621d75ba02.jpg_640x200_b984ddf7.jpg"/>
-			    	</div>
+	  		<swiper :options="swiperOptionAutoplay" ref="mySwiper"  >	    
+			    <swiper-slide v-for="item in bannerSwiperInfo" :key="item.id">
+			    	<router-link :to="item.link">
+				    	<div class="mp-banner-con">
+				    		<img class="mp-banner" :src="item.imgUrl" />
+				    	</div>
+			    	</router-link>
 			    </swiper-slide>
-			    <swiper-slide>
-			    	<div class="mp-banner-con">
-			    		<img class="mp-banner" src="http://img1.qunarzz.com/piao/fusion/1609/15/630b82d932a3c402.jpg_640x200_862e836b.jpg"/>
-			    	</div>
-			    </swiper-slide>
-			    <swiper-slide>
-			    	<div class="mp-banner-con">
-			    		<img class="mp-banner" src="http://img1.qunarzz.com/piao/fusion/1711/b3/66f7230d9ad6e002.jpg_640x200_077e61ee.jpg"/>
-			    	</div>
-			    </swiper-slide>
-			    <swiper-slide>			    
-			    	<div class="mp-banner-con">
-			    		<img class="mp-banner" src="http://img1.qunarzz.com/piao/fusion/1710/16/1d7693c6bd8abd02.png_640x200_43c308dd.png"/>
-			    	</div>
-			    </swiper-slide>
-			    <swiper-slide>
-			    	<div class="mp-banner-con">
-			    		<img class="mp-banner" src="http://img1.qunarzz.com/piao/fusion/1609/c9/cacbf705c5417e02.jpg_640x200_99b2676a.jpg"/>
-			    	</div>
-			    </swiper-slide>
-			    <swiper-slide>
-			    	<div class="mp-banner-con">
-			    		<img class="mp-banner" src="http://img1.qunarzz.com/piao/fusion/1609/f3/52a119dbed871902.jpg_640x200_b4573df8.jpg"/>
-			    	</div>
-			    </swiper-slide>
-			    <swiper-slide>
-			    	<div class="mp-banner-con">
-			    		<img class="mp-banner" src="http://img1.qunarzz.com/piao/fusion/1711/c5/2b4166f592b33202.jpg_640x200_27b41388.jpg"/>
-			    	</div>
-			    </swiper-slide>
-			    <swiper-slide>
-			    	<div class="mp-banner-con">
-			    		<img class="mp-banner" src="http://img1.qunarzz.com/piao/fusion/1710/16/249e5d9c533f6e02.jpg_640x200_9d63493e.jpg"/>
-			    	</div>
-			    </swiper-slide>			    
 		    	<div class="swiper-pagination"  slot="pagination"></div>
 		  </swiper>
 	  	</div>
-	  	<div class="mp-icon-swiper">
+	 	<div class="mp-icon-swiper">
 	  		<swiper :options="swiperOption" ref="mySwiper" class="mp-icon-swiper-container">
-	  			<swiper-slide class="mp-icon-page">		
-			    	<div class="mp-icon-con">
-				    	<a class="mp-icon-link">
+	  			<swiper-slide class="mp-icon-page" v-for="item in iconSwiperInfo" :key="item.pageNum">		
+			    	<div class="mp-icon-con" v-for="list in item.pageContent" :key="list.id">
+				    	<router-link class="mp-icon-link" :to="list.link">
 				    		<div class="mp-icon-img-con">
-				    			<img class="mp-icon-img" src="http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png"/>
+				    			<img class="mp-icon-img" :src="list.imgUrl"/>
 				    		</div>
-				    		<div class="mp-icon-show">景点门票</div>
-				    	</a>
-			    	</div>
-			    	<div class="mp-icon-con">
-			    		<a class="mp-icon-link">
-			    			<div class="mp-icon-img-con">
-				    			<img class="mp-icon-img" src="http://img1.qunarzz.com/piao/fusion/1611/35/2640cab202c41b02.png"/>
-				    		</div>
-				    		<div class="mp-icon-show">动植物园</div>
-			    		</a>
-			    	</div>
-			    	<div class="mp-icon-con">
-			    		<a class="mp-icon-link">
-			    			<div class="mp-icon-img-con">
-				    			<img class="mp-icon-img" src="http://img1.qunarzz.com/piao/fusion/1611/45/676b67d7078abc02.png"/>
-				    		</div>
-				    		<div class="mp-icon-show">故宫</div>
-			    		</a>
-			    	</div>
-			    	<div class="mp-icon-con">
-				    	<a class="mp-icon-link">
-				    		<div class="mp-icon-img-con">
-				    			<img class="mp-icon-img" src="http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png"/>
-				    		</div>
-				    		<div class="mp-icon-show">一日游</div>
-				    	</a>
-			    	</div>
-			    	<div class="mp-icon-con">
-			    		<a class="mp-icon-link">
-			    			<div class="mp-icon-img-con">
-				    			<img class="mp-icon-img" src="http://img1.qunarzz.com/piao/fusion/1611/59/569d3c096e542502.png"/>
-				    		</div>
-				    		<div class="mp-icon-show">必游榜单</div>
-				    	</a>
-			    	</div>
-			    	<div class="mp-icon-con">
-			    		<a class="mp-icon-link">
-			    			<div class="mp-icon-img-con">
-				    			<img class="mp-icon-img" src="http://img1.qunarzz.com/piao/fusion/1611/6d/ee9eb965690ce402.png"/>
-				    		</div>
-				    		<div class="mp-icon-show">秋色美</div>
-				    	</a>
-			    	</div>
-			    	<div class="mp-icon-con">
-			    		<a class="mp-icon-link">
-			    			<div class="mp-icon-img-con">
-				    			<img class="mp-icon-img" src="http://img1.qunarzz.com/piao/fusion/1611/d0/e09575e66f4aa402.png"/>
-				    		</div>
-				    		<div class="mp-icon-show">游乐场</div>
-				    	</a>
-			    	</div>
-			    	<div class="mp-icon-con">
-			    		<a class="mp-icon-link">
-			    			<div class="mp-icon-img-con">
-				    			<img class="mp-icon-img" src="http://img1.qunarzz.com/piao/fusion/1710/a6/83f636bd75ae6302.png"/>
-				    		</div>
-				    		<div class="mp-icon-show">泡温泉</div>
-				    	</a>
+				    		<div class="mp-icon-show">{{list.title}}</div>
+				    	</router-link>
 			    	</div>
 		 	 	</swiper-slide>
-			    <swiper-slide>
-			    	<div class="mp-icon-con">
-				    	<a class="mp-icon-link">
-				    		<div class="mp-icon-img-con">
-				    			<img class="mp-icon-img" src="http://img1.qunarzz.com/piao/fusion/1611/7f/b1ea3c8c7fb6db02.png"/>
-				    		</div>
-				    		<div class="mp-icon-show">城市观光</div>
-				    	</a>
-			    	</div>
-			    	<div class="mp-icon-con">
-			    		<a class="mp-icon-link">
-			    			<div class="mp-icon-img-con">
-				    			<img class="mp-icon-img" src="http://img1.qunarzz.com/piao/fusion/1611/29/c16cd064d85d8502.png"/>
-				    		</div>
-				    		<div class="mp-icon-show">玻璃栈道</div>
-			    		</a>
-			    	</div>
-			    	<div class="mp-icon-con">
-			    		<a class="mp-icon-link">
-			    			<div class="mp-icon-img-con">
-				    			<img class="mp-icon-img" src="http://img1.qunarzz.com/piao/fusion/1611/1c/a8a8d9023a814c02.png"/>
-				    		</div>
-				    		<div class="mp-icon-show">名胜古迹</div>
-			    		</a>
-			    	</div>
-			    	<div class="mp-icon-con">
-				    	<a class="mp-icon-link">
-				    		<div class="mp-icon-img-con">
-				    			<img class="mp-icon-img" src="https://img1.qunarzz.com/piao/fusion/1602/f2/71eb19f77e3f21f7.png"/>
-				    		</div>
-				    		<div class="mp-icon-show">周边游</div>
-				    	</a>
-			    	</div>
-			    	<div class="mp-icon-con">
-			    		<a class="mp-icon-link">
-			    			<div class="mp-icon-img-con">
-				    			<img class="mp-icon-img" src="http://img1.qunarzz.com/piao/fusion/1611/cd/07f33cc087f18d02.png"/>
-				    		</div>
-				    		<div class="mp-icon-show">自然风光</div>
-				    	</a>
-			    	</div>
-			    	<div class="mp-icon-con">
-			    		<a class="mp-icon-link">
-			    			<div class="mp-icon-img-con">
-				    			<img class="mp-icon-img" src="http://img1.qunarzz.com/piao/fusion/1611/ea/8cb1dce519375d02.png"/>
-				    		</div>
-				    		<div class="mp-icon-show">古北水镇</div>
-				    	</a>
-			    	</div>
-			    	<div class="mp-icon-con">
-			    		<a class="mp-icon-link">
-			    			<div class="mp-icon-img-con">
-				    			<img class="mp-icon-img" src="http://img1.qunarzz.com/piao/fusion/1707/34/9285073fde1eb702.png"/>
-				    		</div>
-				    		<div class="mp-icon-show">景点讲解</div>
-				    	</a>
-			    	</div>
-			    	<div class="mp-icon-con">
-			    		<a class="mp-icon-link">
-			    			<div class="mp-icon-img-con">
-				    			<img class="mp-icon-img" src="http://img1.qunarzz.com/piao/fusion/1611/be/a70e61e1f57ee302.png"/>
-				    		</div>
-				    		<div class="mp-icon-show">全部</div>
-				    	</a>
-			    	</div>
-			    </swiper-slide>			    
 		    	<div class="swiper-pagination"  slot="pagination"></div>
 	  		</swiper>
-	  	</div>
+		</div>
 	</div>
 </template>
 
 <script>
 export default {
 	name: "header",
+	props : ['bannerSwiperInfo','iconSwiperInfo'],
 	data() {
       return {
         notNextTick: true,
@@ -333,5 +179,4 @@ export default {
 	color:#212121;
 	font-size:0.28rem;	
 }
-
 </style>
