@@ -2,9 +2,9 @@
 	<div>
 		<ul id="famous">
 			<h2 class="famous-title">周末去哪儿</h2>
-			<li v-for="item in items">	
+			<li v-for="item in weekList" key = "item.id">
 			  	<div class="famous-img">
-			  		<img v-bind:src="item.src" alt="">
+			  		<img :src="item.src" alt="">
 			  	</div>
 			  	<div class="famous-content">
 			  		<p class="famous-name">
@@ -13,7 +13,7 @@
 			  		<p class="famous-describe">
 			  			{{ item.describe }}
 			  		</p>
-			  	</div>	
+			  	</div>
 			</li>
 		</ul>
 	</div>
@@ -21,31 +21,8 @@
 
 <script>
 export default {
-	  data(){
-	  	return{
-	    items: [{ 
-	    		src:'http://img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg',
-	      		name: '北京温泉排行榜',
-	      		describe: '细数北京温泉，温暖你的冬天'
-	      	},{ 
-	    		src:'http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg',
-	      		name: '寻找北京的皇城范儿',
-	      		describe: '数百年的宫廷庙宇，至今依旧威严霸气'
-	      	},{ 
-	    		src:'http://img1.qunarzz.com/sight/source/1505/aa/7baaf8a851d221.jpg_r_640x214_1431200f.jpg',
-	      		name: '北京必游TOP10',
-	      		describe: '来北京必去的景点非这些地方莫属'
-	      	},{ 
-	    		src:'http://img1.qunarzz.com/sight/source/1509/81/0412da9c4db66a.jpg_r_640x214_8e23871e.jpg',
-	      		name: '登高望远秋色佳',
-	      		describe: '山顶满眼彩色，此情此景醉了'
-	      	},{ 
-	    		src:'http://img1.qunarzz.com/sight/source/1509/28/1bb74b851279e6.jpg_r_640x214_64ebf0ee.jpg',
-	      		name: '秋高气爽去礼佛',
-	      		describe: '秋风伴着美妙经声，品尝秋的另一番滋味'
-	      	}]
-		}
-	}
+	props:['weekList'],
+	
 }
 </script>
 
