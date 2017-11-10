@@ -3,7 +3,6 @@
    		<Home-swipper :bannerSwiperInfo="bannerSwiperInfo" :iconSwiperInfo="iconSwiperInfo"></Home-swipper>
    		<Home-suggest :suggestList = "suggestList"></Home-suggest>
    		<Home-week :weekList = "weekList"></Home-week>
-
 	</div>
 </template>
 
@@ -12,43 +11,39 @@ import HomeSwipper from './components/homeSwipper'
 import HomeSuggest from './components/homeSuggest'
 import HomeWeek from './components/homeWeek'
 import axios from 'axios';
+import {mapState, mapActions} from "vuex";
+import {AJAX_GET_DATA} from "./types.js"
 export default {
   name: 'home',
-  data (){
-    return {
-      suggestList: [],
-      weekList: [],
-      bannerSwiperInfo : [] ,
-      iconSwiperInfo : []
-    }
-  },
   components: {
   	'Home-swipper': HomeSwipper,
   	'Home-suggest': HomeSuggest,
   	'Home-week': HomeWeek
   },
+  computed: mapState({
+      bannerSwiperInfo: (state) => {
+        return state.home.bannerSwiperInfo
+      },
+      iconSwiperInfo: (state) => {
+        return state.home.iconSwiperInfo
+      },
+      suggestList: (state) => {
+        return state.home.suggestList
+      },
+      weekList: (state) => {
+        return state.home.weekList
+      }
+  }),
   mounted (){
-    this.getHomeData()
+    !this.bannerSwiperInfo.length &&  this.getHomeData() 
   },
-  methods: {
-    getHomeData (){
-      axios.get('/static/home.json?city=北京')
-      .then(this.handleGetDataSucc.bind(this))
-      .catch(this.handleGetDataErr.bind(this))
-    },
-    handleGetDataSucc (res){
-      const r = res.data
-      const data = r.data
-      this.suggestList = data.suggestList
-      this.weekList = data.weekList
-      this.bannerSwiperInfo = data.bannerSwiperInfo
-      this.iconSwiperInfo = data.iconSwiperInfo
-    },
-    handleGetDataErr (){
-      alert("获取路径失败")
+  methods: mapActions({
+    getHomeData : (dispatch) => {
+      dispatch(AJAX_GET_DATA)
     }
-  }
+  })
 }
+
 </script>
 
 <style scoped>

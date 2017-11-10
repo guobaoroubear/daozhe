@@ -5,27 +5,32 @@
 				"img": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg",
 				"title": "故宫",
 				"desc": "东方宫殿建筑代表，世界宫殿建筑典范",
-				"price": "20"
+				"price": "20",
+				"link" : "/detail"
 			},{
 				"img": "http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_140x140_97813766.jpg",
 				"title": "八达岭长城",
 				"desc": "不到长城非好汉",
-				"price": "25"
+				"price": "25",
+				"link" : "/detail"
 			},{
 				"img": "http://img1.qunarzz.com/sight/p0/1505/d2/d274c92de14c93da.water.jpg_140x140_e20be8e0.jpg",
 				"title": "颐和园",
 				"desc": "保存完整的一座皇家行宫御苑",
-				"price": "23.2"
+				"price": "23.2",
+				"link" : "/detail"
 			},{
 				"img": "http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_140x140_b05eb1df.jpg",
 				"title": "北京欢乐谷",
 				"desc": "七大主题园区带你畅享北京欢乐谷",
-				"price": "28"
+				"price": "28",
+				"link" : "/detail"
 			},{
 				"img": "http://img1.qunarzz.com/sight/p0/1708/2b/2b6378fd3b2e1d86a3.img.jpg_140x140_eae81520.jpg",
 				"title": "慕田峪长城",
 				"desc": "秀美长城，关键是人少",
-				"price": "19.1"
+				"price": "19.1",
+				"link" : "/detail"
 			}],
 		 "weekList": [{ 
 	    		"src": "http://img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg",
@@ -88,49 +93,49 @@
 	 			"iconSwiperitem1" : {
 						 			"id" : 1 ,
 							 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png",
-							 		"link" : "/detail",
+							 		"link" : "/list",
 							 		"title" : "景点门票"
 						 		},
 				"iconSwiperitem2" : {
 									"id" : 2 ,
 							 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1611/35/2640cab202c41b02.png",
-							 		"link" : "/detail",
+							 		"link" : "/list",
 							 		"title" : "动植物园"
 				},
 				"iconSwiperitem3" : {
 									"id" : 3 ,
 							 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1611/45/676b67d7078abc02.png",
-							 		"link" : "/detail",
+							 		"link" : "/list",
 							 		"title" : "故宫"
 				},
 				"iconSwiperitem4" : {
 									"id" : 4 ,
 							 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png",
-							 		"link" : "/detail",
+							 		"link" : "/onedaylist",
 							 		"title" : "一日游"
 				},
 				"iconSwiperitem5" : {
 									"id" : 5 ,
 							 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1611/59/569d3c096e542502.png",
-							 		"link" : "/detail",
+							 		"link" : "/list",
 							 		"title" : "必游榜单"
 				},
 				"iconSwiperitem6" : {
 									"id" : 6 ,
 							 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1611/6d/ee9eb965690ce402.png",
-							 		"link" : "/detail",
+							 		"link" : "/list",
 							 		"title" : "秋色美"
 				},
 				"iconSwiperitem7" : {
 									"id" : 7 ,
 							 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1611/d0/e09575e66f4aa402.png",
-							 		"link" : "/detail",
+							 		"link" : "/list",
 							 		"title" : "游乐场"
 				},
 				"iconSwiperitem8" : {
 									"id" : 8 ,
 							 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1710/a6/83f636bd75ae6302.png",
-							 		"link" : "/detail",
+							 		"link" : "/list",
 							 		"title" : "泡温泉"
 				}		 				 				 				 				 				 				 		
 	 		}
@@ -140,19 +145,19 @@
  				"iconSwiperitem1" : {
 						 			"id" : 1 ,
 							 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1611/7f/b1ea3c8c7fb6db02.png",
-							 		"link" : "/detail",
+							 		"link" : "/list",
 							 		"title" : "城市观光"
 					 		},
 				"iconSwiperitem2" : {
 									"id" : 2 ,
 							 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1611/29/c16cd064d85d8502.png",
-							 		"link" : "/detail",
+							 		"link" : "/list",
 							 		"title" : "玻璃栈道"
 				},
 				"iconSwiperitem3" : {
 									"id" : 3 ,
 							 		"imgUrl" : "http://img1.qunarzz.com/piao/fusion/1611/1c/a8a8d9023a814c02.png",
-							 		"link" : "/detail",
+							 		"link" : "/list",
 							 		"title" : "名胜古迹"
 				}
  			}

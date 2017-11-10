@@ -25,17 +25,19 @@
 		<h2 class="home-modtitle">热销推荐</h2>
 		<ul>
 			<li v-for="item in suggestList" class="home-hot-list">
-				<div class="home-hot-img">
+				<router-link :to="item.link">
+					<div class="home-hot-img">
 					<img :src="item.img"/>
-				</div>
-				<div class="home-hot-p">
-					<p class="nowrap home-hot-title">{{item.title}}</p>
-					<p class="nowrap home-hot-desc">{{item.desc}}</p>
-				</div>
-				<div class="home-hot-price">￥
-					<span class="home-hot-price-num">{{item.price}}</span>
-					<span class="home-hot-price-text">起</span>
-				</div>
+					</div>
+					<div class="home-hot-p">
+						<p class="nowrap home-hot-title">{{item.title}}</p>
+						<p class="nowrap home-hot-desc">{{item.desc}}</p>
+					</div>
+					<div class="home-hot-price">￥
+						<span class="home-hot-price-num">{{item.price}}</span>
+						<span class="home-hot-price-text">起</span>
+					</div>
+				</router-link>
 			</li>
 		</ul>
 	</div>
