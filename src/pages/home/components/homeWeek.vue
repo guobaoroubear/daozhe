@@ -2,18 +2,20 @@
 	<div>
 		<ul id="famous">
 			<h2 class="famous-title">周末去哪儿</h2>
-			<li v-for="item in weekList">	
-			  	<div class="famous-img">
-			  		<img v-bind:src="item.src" alt="">
-			  	</div>
-			  	<div class="famous-content">
-			  		<p class="famous-name">
-			  			{{ item.name }}
-			  		</p>
-			  		<p class="famous-describe">
-			  			{{ item.describe }}
-			  		</p>
-			  	</div>	
+			<li v-for="item in weekList"> 
+				<router-link :to = "item.link">
+					<div class="famous-img">
+				  		<img v-bind:src="item.src" alt="">
+				  	</div>
+				  	<div class="famous-content">
+				  		<p class="famous-name">
+				  			{{ item.name }}
+				  		</p>
+				  		<p class="famous-describe">
+				  			{{ item.describe }}
+				  		</p>
+				  	</div>	
+				</router-link> 	
 			</li>
 		</ul>
 	</div>

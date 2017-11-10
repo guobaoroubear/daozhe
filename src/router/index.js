@@ -8,6 +8,7 @@ import Detail from '@/pages/detail/detail'
 import Detailswiper from '@/pages/detail/components/detailswiper'
 import Scenicmap from '@/pages/detail/components/scenicmap'
 import Scenicintroduction from '@/pages/detail/components/scenicintroduction'
+import Weekendlist from '@/pages/weekendlist/weekendlist'
 
 Vue.use(Router)
 
@@ -37,16 +38,18 @@ export default new Router({
       path: "/detail/detailswiper",
       name: "detailswiper",
       component: Detailswiper,
-    },
-    {
+    },{
       path: "/detail/scenicmap",
       name: "scenicmap",
       component: Scenicmap,
-    },
-    {
+    },{
       path: "/detail/scenicintroduction",
       name: "scenicintroduction",
       component: Scenicintroduction,
+    },{
+      path: "/weekendlist",
+      name: "weekendlist",
+      component: Weekendlist,
     }
 
   ]

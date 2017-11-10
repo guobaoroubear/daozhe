@@ -40,7 +40,6 @@
 				    mapObj.addControl(geolocation);
 				    geolocation.getCurrentPosition();
 				    AMap.event.addListener(geolocation, 'complete', function(res){
-				    	console.log(res.formattedAddress)	
 				    	this.position = res.formattedAddress	  
 				    	console.log(this.position)  
 				    	
