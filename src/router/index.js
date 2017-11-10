@@ -4,6 +4,7 @@ import Home from '@/pages/home/home'
 import List from '@/pages/list/list'
 import CityList from '@/pages/citylist/citylist'
 import Detail from '@/pages/detail/detail'
+import Weekendlist from '@/pages/weekendlist/weekendlist'
 
 Vue.use(Router)
 
@@ -25,6 +26,10 @@ export default new Router({
       path: "/detail",
       name: "detail",
       component: Detail,
+    },{
+      path: "/weekendlist",
+      name: "weekendlist",
+      component: Weekendlist,
     }
   ]
 })
