@@ -47,9 +47,7 @@ export default {
 	.mp-pagination a .mp-disable-btn {
 	    background: #bdbdbd;
 	    color: #fff;
-	    border: 0;
-
-	   
+	    border: 0;   
 	}
 	.mp-pagination .mp-page-num {
 	    color: #212121;
