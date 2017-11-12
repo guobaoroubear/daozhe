@@ -1,11 +1,13 @@
 import axios from "axios";
 export default {
 	state: {
-		oneDayListNav: []
+		oneDayListNav: [],
+		onedaycontent: []
 	},
 	mutations: {
 		setState(state,payload){
-			state.oneDayListNav = payload.oneDayListNav
+			state.oneDayListNav = payload.oneDayListNav,
+			state.onedaycontent = payload.onedaycontent
 
 		}
 	},
