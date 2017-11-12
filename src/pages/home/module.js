@@ -24,9 +24,7 @@ export default {
       	context.commit(SET_DATA, res.data.data);
       	
       })
+    }
   }
-  },
-  getters: {
-
-  }
+ 
 }

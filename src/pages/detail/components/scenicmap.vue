@@ -64,13 +64,13 @@
 </script>
 <style scope>
 #bottom{
-	position: relative;
-	bottom: 50%;
-	left: 50%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
 	width: 100%;
 	height: 40px;
 	background: #dadada;
-	color:red;
+	color: red;
 	font-size: 16px;
 }
 #container{
