@@ -60,7 +60,6 @@
 							</a>
 						</div>
 					</div>
-
 				</li>
 			</ul>
 			</div>
@@ -76,153 +75,153 @@ export default {
 </script>
 
 <style>
-	.list{
-		background:#f5f5f5;
-	}
-	.mp-filter {
-	    display: -webkit-box;
-	    display: -moz-box;
-	    display: -ms-flexbox;
-	    display: box;
-	    height: .8rem;
-	    background: #fff;
-	    width: 100%;
-	}
-	.mp-sight-info{
-		padding:.2rem;
-	}
-	.mp-sight-info a{
-		color: #00afc7;
-    	text-decoration: none;
-	}
-	.mp-sight-imgcon{
-		float:left;
-	}
-	.mp-sight-img{
-		width: 1.6rem;
-    	height: 1.6rem;
-	}
-	.mp-sight-detail {
-	    position: relative;
-	    overflow: hidden;
-	    padding-left: .2rem;
-	    height: 1.6rem;
-	}
-	.mp-sight-name {
-	    overflow: hidden;
-	    float: left;
-	    max-width: 60%;
-	    color: #212121;
-	    font-size: .32rem;
-	    line-height: .36rem;
-	    white-space: nowrap;
-	    text-overflow: ellipsis;
-	}
-	.mp-tag-word {
-	    display: inline-block;
-	    margin-left: .06rem;
-	    width: .3rem;
-	    height: .3rem;
-	    background: #ff1200;
-	    color: #fff;
-	    font-size: .24rem;
-	    line-height: .3rem;
-	    text-align: center;
-	}
-	.mp-sight-group {
-	    margin-bottom: .2rem;
-	    background: #fff;
-	}
-	.mp-sight-price {
-	    position: absolute;
-	    top: 0;
-	    right: 0;
-	    height: .36rem;
-	    color: #ff8300;
-	    font-size: .2rem;
-	}
-	.mp-sight-price em {
-    	font-size: .36rem;
-	}
-	.mp-sight-ticket{
-		position: relative;
-	    height: .9rem;
-	    margin: 0 .2rem;
-	}
-	.mp-ticket-name{
-		overflow: hidden;
-	    margin-right: 1.2rem;
-	    color: #212121;
-	    font-size: .28rem;
-	    line-height: .9rem;
-	    white-space: nowrap;
-	    text-overflow: ellipsis;
-	}
-	.mp-ticket-price{
-		overflow: hidden;
-	    position: absolute;
-	    top: 0;
-	    right: 0;
-	    width: 1.2rem;
-	    height: .9rem;
-	    color: #ff8300;
-	    font-size: .2rem;
-	    line-height: .9rem;
-	    text-align: right;
-	}
-	.mp-ticket-price-em{
-		font-size: .36rem;
-	}
-	.mp-lowprice-text {
-    	color: #9e9e9e;
-	}
-	.mp-sight-comments {
-    	margin-top: .38rem;
-    	height: .64rem;
-    	line-height: .64rem;
-	}
-	.mp-comments-totalnum {
-	    position: relative;
-	    top: -.04rem;
-	    margin-left: .06rem;
-	    color: #9e9e9e;
-	    font-size: .24rem;
-	}
-	.mp-sight-location {
-	    position: absolute;
-	    bottom: 0;
-	    color: #9e9e9e;
-	    font-size: 0;
-	    white-space: nowrap;
-	}
-	.mp-sight-address{
-		font-size: .24rem;
-	}
-	.mp-select{
-	    box-sizing: border-box;
-	    float:left;
-	    width: 50%;
-	    height: .8rem;
-	    overflow: hidden;
-	    position: relative;
-	    color: #212121;
-	    line-height: .8rem;
-	    text-align: center;
-	    white-space: nowrap;
-	    text-overflow: ellipsis;
-	    border-bottom:1px solid #f5f5f5;
-	}
-	.mp-select-caption{
-	    width: 100%;
-	    height: .8rem;
-	    overflow: hidden;
-	    position: relative;
-	    color: #212121;
-	    line-height: .8rem;
-	    text-align: center;
-	    white-space: nowrap;
-	    text-overflow: ellipsis;
-	    border-right: 1px solid #f5f5f5;
-	}
-	
+.list{
+	background:#f5f5f5;
+}
+.mp-filter {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: box;
+    height: .8rem;
+    background: #fff;
+    width: 100%;
+}
+.mp-sight-info{
+	padding:.2rem;
+}
+.mp-sight-info a{
+	color: #00afc7;
+	text-decoration: none;
+}
+.mp-sight-imgcon{
+	float:left;
+}
+.mp-sight-img{
+	width: 1.6rem;
+	height: 1.6rem;
+}
+.mp-sight-detail {
+    position: relative;
+    overflow: hidden;
+    padding-left: .2rem;
+    height: 1.6rem;
+}
+.mp-sight-name {
+    overflow: hidden;
+    float: left;
+    max-width: 60%;
+    color: #212121;
+    font-size: .32rem;
+    line-height: .36rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.mp-tag-word {
+    display: inline-block;
+    margin-left: .06rem;
+    width: .3rem;
+    height: .3rem;
+    background: #ff1200;
+    color: #fff;
+    font-size: .24rem;
+    line-height: .3rem;
+    text-align: center;
+}
+.mp-sight-group {
+    margin-bottom: .2rem;
+    background: #fff;
+}
+.mp-sight-price {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: .36rem;
+    color: #ff8300;
+    font-size: .2rem;
+}
+.mp-sight-price em {
+	font-size: .36rem;
+}
+.mp-sight-ticket{
+	position: relative;
+    height: .9rem;
+    margin: 0 .2rem;
+}
+.mp-ticket-name{
+	overflow: hidden;
+    margin-right: 1.2rem;
+    color: #212121;
+    font-size: .28rem;
+    line-height: .9rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.mp-ticket-price{
+	overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1.2rem;
+    height: .9rem;
+    color: #ff8300;
+    font-size: .2rem;
+    line-height: .9rem;
+    text-align: right;
+}
+.mp-ticket-price-em{
+	font-size: .36rem;
+}
+.mp-lowprice-text {
+	color: #9e9e9e;
+}
+.mp-sight-comments {
+	margin-top: .38rem;
+	height: .64rem;
+	line-height: .64rem;
+}
+.mp-comments-totalnum {
+    position: relative;
+    top: -.04rem;
+    margin-left: .06rem;
+    color: #9e9e9e;
+    font-size: .24rem;
+}
+.mp-sight-location {
+    position: absolute;
+    bottom: 0;
+    color: #9e9e9e;
+    font-size: 0;
+    white-space: nowrap;
+}
+.mp-sight-address{
+	font-size: .24rem;
+}
+.mp-select{
+    box-sizing: border-box;
+    float:left;
+    width: 50%;
+    height: .8rem;
+    overflow: hidden;
+    position: relative;
+    color: #212121;
+    line-height: .8rem;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border-bottom:1px solid #f5f5f5;
+}
+.mp-select-caption{
+    width: 100%;
+    height: .8rem;
+    overflow: hidden;
+    position: relative;
+    color: #212121;
+    line-height: .8rem;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border-right: 1px solid #f5f5f5;
+}
+
 </style>

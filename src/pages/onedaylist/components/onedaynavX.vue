@@ -2,7 +2,6 @@
 	<div class="onedaynav">
 		<div class="outer">
 			<div class="nav-container">				
-
 				<div class="nav-wrapper" id="wrapperX">
 					<div class="nav-content" id="scrollX" >
 						<ul class="nav-content-innerX">
@@ -12,12 +11,10 @@
 						</ul>
 					</div>
 				</div>
-	
 				<div class="nav-border-left nav-right">
 					<span class="nav-iconfont-arrow iconfont">&#xe630;</span>
 				</div>
-			</div>
-			
+			</div>			
 		</div>
 	</div>
 	
@@ -30,7 +27,6 @@ export default {
 	methods: {
 	},
 	mounted() {
-
 		 this.myScroll = new IScroll('#wrapperX',{scrollX: true,scrollY: false, mouseWheel: true
 		 })
 	},
@@ -55,12 +51,10 @@ export default {
 	margin-right: .8rem;
 	height: .8rem;
 	overflow: hidden;
-	
 }
 .nav-content{
 	float: left;
-}
-	
+}	
 .nav-content-innerX{
 	height: 5rem;
 	width: 36rem;

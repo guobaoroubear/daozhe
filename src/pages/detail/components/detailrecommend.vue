@@ -32,42 +32,37 @@
 					</router-link>
 				</div>
 			</div>
-
-
-
 			<transition-group name="slide-fade">
 	        	<div class="dock-content" id="dock-content" v-if="show" v-for="item in detailRecommendInfo" key={{item.id}}>
-	        	<div class="dock-content-con">
-	        		<div class="dock-top">
-	        			<h6 class="reserve-title ellipsis2">{{item.title}}</h6>
-	        			<i class="delet icon iconfont" v-on:click="handleClickNone">&#xe63f;</i>
-	        		</div>
-	        		<h5 class="dock-price"><span class="book-tip">&yen</span>{{item.price}}<span class="dock-num">/张</span></h5>
-	        		<h4 class="price-calendar">价格日历</h4>
-	        		<div class="calendar-con">
-	        			<div class="calendar-con-item color-gray">  
-	        				<em class="date">今天</em>
-	        				<em class="date">11月7日</em>
-	        			</div>
-	        			<div class="calendar-con-item color-gray">  
-	        				<em class="date">明天</em>
-	        				<em class="date">11月8日</em>
-	        			</div>
-	        			<div class="calendar-con-item " id="checked"> 
-	        				<em class="date">后天</em>
-	        				<em class="date">11月9日</em>
-	        			</div>
-	        			<div class="calendar-con-item"> 
-	        				<em class="date others">其他日期</em>
-	        			</div>
-	        		</div>
-	        	</div>	 
-	        	<div class="mpf-booking-light">需要在游玩前1天的23:59前预订</div>        	
-	        	<router-link to="/login"class="book-btn">立即预订</router-link>
-	        </div>
-   		</transition-group>
-
-
+		        	<div class="dock-content-con">
+		        		<div class="dock-top">
+		        			<h6 class="reserve-title ellipsis2">{{item.title}}</h6>
+		        			<i class="delet icon iconfont" v-on:click="handleClickNone">&#xe63f;</i>
+		        		</div>
+		        		<h5 class="dock-price"><span class="book-tip">&yen</span>{{item.price}}<span class="dock-num">/张</span></h5>
+		        		<h4 class="price-calendar">价格日历</h4>
+		        		<div class="calendar-con">
+		        			<div class="calendar-con-item color-gray">  
+		        				<em class="date">今天</em>
+		        				<em class="date">11月7日</em>
+		        			</div>
+		        			<div class="calendar-con-item color-gray">  
+		        				<em class="date">明天</em>
+		        				<em class="date">11月8日</em>
+		        			</div>
+		        			<div class="calendar-con-item " id="checked"> 
+		        				<em class="date">后天</em>
+		        				<em class="date">11月9日</em>
+		        			</div>
+		        			<div class="calendar-con-item"> 
+		        				<em class="date others">其他日期</em>
+		        			</div>
+		        		</div>
+		        	</div>	 
+		        	<div class="mpf-booking-light">需要在游玩前1天的23:59前预订</div>        	
+		        	<router-link to="/login"class="book-btn">立即预订</router-link>
+	        	</div>
+   			</transition-group>
 		</div>
 	</div>
 </template>
@@ -78,7 +73,6 @@
 			return {
 				detailRecommendInfo: [],
 				show: false
-
 			}
 		},
 		mounted(){
@@ -88,22 +82,17 @@
 			getDetailData(){
 				axios.get("./static/detail.json")
 					.then((res) => {
-						
 						const data = res.data.data
-						 console.log(data)
 						this.detailRecommendInfo = data.detailRecommendInfo
-
 					})
 			},
 			handleclick(){
-				// console.log(e)
 				this.show =  true
 			},
 			handleClickNone(){
 				this.show = false
 			}
 		}
-
 	}
 </script>
 <style scoped>
@@ -113,17 +102,10 @@
 .slide-fade-leave-active {
   transition: all .4s cubic-bezier(1.0, 0.5, 0.8, 1.0);
 }
-.slide-fade-enter, .slide-fade-leave-to
-/* .slide-fade-leave-active for below version 2.1.8 */ {
+.slide-fade-enter, .slide-fade-leave-to {
   transform: translateX(10px);
   opacity: 0;
 }
-
-
-
-
-
-
 .detail-recommend{
 	position: relative;
 }
@@ -161,7 +143,6 @@
 	flex-direction: column;
 	justify-content: center;
 	width: 75%;
-	
 }
 .recommend-ticket-right{
 	flex: 1;
@@ -208,7 +189,6 @@
 	display: block;
 	width: 100%;
 	padding-left: .2rem;
-
 }
 .recommend-ticket-price{
 	display: block;
@@ -217,7 +197,6 @@
 	height: .32rem;
 	text-align: center;
 	color: #ff9800;
-
 }
 .recommend-ticket-price-num{
 	color: #ff9800;
@@ -233,12 +212,7 @@
 	line-height: .6rem;
 	border-radius: .06rem;
 	text-align: center;
-
 }
-
-
-
-
 .dock-content{
 	position: fixed;
 	bottom: 0;

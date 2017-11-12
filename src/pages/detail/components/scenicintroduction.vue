@@ -5,7 +5,6 @@
 			<h1 class="scenicintroduction-header-title">详情介绍</h1>
 		</div>
 		<div>入圆时间</div>
-		
 	</div>
 </template>
 <script>

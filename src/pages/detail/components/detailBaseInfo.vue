@@ -23,6 +23,7 @@ export default {
 	name: 'list'
 }
 </script>
+
 <style scoped>
 .detail-baseinfo{
 	position: relative;

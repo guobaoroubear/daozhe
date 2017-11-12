@@ -1,7 +1,6 @@
 
 <template>
-	<div class="onedaylist-header">
-		
+	<div class="onedaylist-header">		
 		<router-link to="/" class="mp-header-left icon iconfont">&#xe63f;</router-link>
 		  	<div class="mp-header-center"> 
 		  		<a class="mp-link-area">

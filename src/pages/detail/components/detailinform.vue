@@ -33,7 +33,6 @@
 .detailinform-inner-icon{
 	color: #f67353;
 	margin-right: .1rem;
-
 }
 .detailinform-inner-arrowicon{
 	right: .2rem;

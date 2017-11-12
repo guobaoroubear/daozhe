@@ -70,7 +70,6 @@ export default {
 	font-size: .24rem;
 	padding-left: .1rem;
 }
-
 .nav-wrapper{	
 	background: #e5e7e8;
 	position: absolute;
@@ -103,7 +102,6 @@ export default {
 }
 .nav-content-innerY{
 	font-size: 0;
-	
 }
 .nav-content-inner-text{
 	/*display: inline-block;*/
@@ -121,7 +119,6 @@ export default {
 	font-size: .26rem;
 	line-height: .56rem;
 	border-radius: .04rem;
-
 }
 .nav-border-left{
 	position: absolute;

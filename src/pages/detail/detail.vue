@@ -26,7 +26,6 @@ export default {
 		"detail-inform" : detailinform,
 		"detail-recommend": detailrecommend,
 		"detail-ticket": detailticket
-
 	}
 }
 </script>

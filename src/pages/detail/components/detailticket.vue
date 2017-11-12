@@ -22,8 +22,6 @@
 				隐藏部分去哪直销 爱上旅游网1111111
 			</div>
 		</div>
-
-
 		<div class="detailticket-pm">
 			<div class="detailticket-pm-show">
 				<h5 class="detailticket-pm-type detailticket-ellipsis">
@@ -41,7 +39,6 @@
 			 	隐藏部分去哪直销 爱上旅游网22222222
 			 </div>
 		</div>
-
 		<div class="detailticket-rest" v-if="show2">
 			<div class="detailticket-pm-show">
 				<h5 class="detailticket-pm-type detailticket-ellipsis">
@@ -56,7 +53,6 @@
 				<div class="detailticket-pm-iconarrow iconfont">&#xe630;</div>
 			</div>
 		</div>
-
 		<div class="detailticket-refresh" v-on:click="showRest">
 			查看剩余产品
 			<span class="detailticket-iconfont iconfont">&#xe630;</span>
@@ -83,13 +79,8 @@
 				this.show2 = !this.show2;	
 			}
 		}
-		// mounted(){
-			
-		// },
-
 	}
 	
-
 </script>
 <style scoped>
 .detailticket{
@@ -117,7 +108,6 @@
 .detailticket-am{
 	position:relative;
 	z-index: 2;
-	/*margin-bottom: -.2rem;*/
 	padding: .24rem .2rem;
 	background: #fff;
 	border-bottom: 1px solid #dadada;
@@ -136,7 +126,6 @@
 	margin-bottom: -.2rem;
 	padding: .24rem .2rem;
 	background: #fff;
-	
 }
 .detailticket-am-type,.detailticket-pm-type{
 	margin-right: 1.8rem;

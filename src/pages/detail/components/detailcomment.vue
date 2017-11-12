@@ -5,16 +5,13 @@
 			<i class="detailcomment-startlevel-icon iconfont">&#xe657;&#xe657;&#xe657;&#xe657;&#xe657;</i>
 		</span>
 		<span class="detailcomment-tagscore">5.0分</span>
-
 		<router-link class="detailcomment-total" to="">
 			<span class="detailcomment-totalnum">
 				155626评论
 				<i class="detailcomment-rightarrow iconfont">&#xe62e;</i>
 			</span>
 		</router-link>
-
 	</div>
-
 </template>
 <script>
 	export default{

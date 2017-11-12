@@ -6,11 +6,9 @@
 		</div>
 		<div id="container">{{map}}</div>
 		<div id="bottom">{{position}}</div>
-		
 	</div>
 </template>
 <script>
-	  
 	export default{  
 		data() {
 			return {
@@ -27,8 +25,7 @@
 					    center: [116.397428, 39.90923] 
 					    })     
 			},
-			getPosition: () => {
-				
+			getPosition: () => {				
 				var mapObj = new AMap.Map('container')
 				mapObj.plugin('AMap.Geolocation', function () {
 				    var geolocation = new AMap.Geolocation({
@@ -41,8 +38,6 @@
 				    geolocation.getCurrentPosition();
 				    AMap.event.addListener(geolocation, 'complete', function(res){
 				    	this.position = res.formattedAddress	  
-				    	console.log(this.position)  
-				    	
 				    });
 				    AMap.event.addListener(geolocation, 'error', function(error){
 				    	console.log(error)
@@ -53,12 +48,7 @@
 		mounted() {
 			this.getPosition(),
 			this.getMap()
-
 		}
-	  
-	
-	
-   	
 }
 
 </script>

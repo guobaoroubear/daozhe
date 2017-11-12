@@ -35,7 +35,6 @@ export default{
 		getOneDayListData: (dispatch) => {
 			dispatch("ajaxGetData")
 		}
-
 	}),
 	mounted(){
 		!this.oneDayListNav.length && this.getOneDayListData()

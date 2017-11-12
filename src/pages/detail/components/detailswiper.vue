@@ -1,6 +1,5 @@
 <template>
 	<div>
-		
 	  	<div class="detail-swipper">
 	  		<swiper :options="swiperOption" ref="mySwiper"  >	    
 			    <swiper-slide >
@@ -71,8 +70,5 @@ export default {
 }
 .detail-img{
 	width: 100%;
-}
-.swiper-pagination-bullet{
-	
 }
 </style>

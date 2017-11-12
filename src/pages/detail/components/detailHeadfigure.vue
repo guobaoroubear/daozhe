@@ -5,7 +5,6 @@
 				<router-link to="/" class="detail-header-left iconfont">&#xe63f;</router-link>
 				<h1 class="detail-header-title">故宫</h1>
 			</div>
-
 			<div class="detail-headerfigure-wrap">
 				<router-link to="/detail/detailswiper">
 					<img class="detail-headerfigure-img" src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_600x330_f922b488.jpg"/>
@@ -28,8 +27,7 @@
 <script>
 
 export default {
-	name: 'list'
-	
+	name: 'list'	
 }
 </script>
 
@@ -64,7 +62,6 @@ export default {
 	font-size: .32rem;
 	text-align: center;
 	color: #fff;
-
 }
 .detail-headerfigure {
 	position: relative;

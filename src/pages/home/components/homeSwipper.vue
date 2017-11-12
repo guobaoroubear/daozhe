@@ -9,12 +9,12 @@
 		  		</a>
 		  	</div>
 		  	<div class="mp-header-right">
-		  		<a class="mp-header-right-link">
+		  		<router-link class="mp-header-right-link" to="citylist">
 		  			<span class="mp-header-right-nav">
 		  				北京
 		  				<i class="header-right-bottom icon iconfont">&#xe630;</i>
 		  			</span>
-		  		</a>
+		  		</router-link>
 		  	</div>
 	  	</div>
 	  	<div class="mp-banner-swipper">

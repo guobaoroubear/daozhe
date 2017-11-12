@@ -9,8 +9,6 @@ export default {
   },
   mutations: {
   	[SET_DATA](state, payload){
-  		console.log(state)
-  		console.log(payload)
   		state.bannerSwiperInfo = payload.bannerSwiperInfo;
   		state.iconSwiperInfo = payload.iconSwiperInfo;
   		state.suggestList = payload.suggestList;
@@ -22,7 +20,6 @@ export default {
       axios.get('/static/home.json?city=北京')
       .then((res) => {
       	context.commit(SET_DATA, res.data.data);
-      	
       })
     }
   }

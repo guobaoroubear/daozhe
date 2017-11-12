@@ -1,7 +1,6 @@
 <template>
 	<div class="list">
    		<Home-swipper></Home-swipper>
-
    		<List-content :famousList = "famousList"></List-content>
 		  <List-paging></List-paging>
 	</div>
